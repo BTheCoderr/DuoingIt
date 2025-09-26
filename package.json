@@ -10,23 +10,24 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@tailwindcss/postcss": "^4.1.13",
+    "lucide-react": "^0.263.1",
+    "next": "15.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "15.5.4",
-    "resend": "^3.2.0",
-    "lucide-react": "^0.263.1",
-    "@headlessui/react": "^1.7.17"
+    "resend": "^3.2.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "tailwindcss": "^3.4.1",
-    "postcss": "^8.4.31",
     "autoprefixer": "^10.4.16",
     "eslint": "^8",
     "eslint-config-next": "15.5.4",
-    "@eslint/eslintrc": "^3.1.0"
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
