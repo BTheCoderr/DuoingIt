@@ -12,12 +12,11 @@ export default function Hero() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-yellow-400 rounded-full flex items-center justify-center">
-              <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-                <div className="w-4 h-4 bg-gradient-to-br from-green-400 to-yellow-400 rounded-full"></div>
-              </div>
-            </div>
-            <span className="text-2xl font-bold text-green-600">DouingIt</span>
+            <img
+              src="/images/Douing it logo(1).png"
+              alt="DouingIt Logo"
+              className="h-12 w-auto"
+            />
           </div>
 
           {/* Desktop Navigation */}

@@ -6,12 +6,11 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-green-400 to-yellow-400 rounded-full flex items-center justify-center">
-                <div className="w-6 h-6 bg-white rounded-full flex items-center justify-center">
-                  <div className="w-3 h-3 bg-gradient-to-br from-green-400 to-yellow-400 rounded-full"></div>
-                </div>
-              </div>
-              <span className="text-2xl font-bold text-green-400">DouingIt</span>
+              <img
+                src="/images/Douing it logo(1).png"
+                alt="DouingIt Logo"
+                className="h-10 w-auto"
+              />
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
               Preserving your family's legacy through guided pathways, storytelling, and inter-generational connections that last for generations.

@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
-    "@tailwindcss/postcss": "^4.1.13",
     "lucide-react": "^0.263.1",
     "next": "15.5.4",
     "react": "^18",
