@@ -57,7 +57,7 @@ export default function Hero() {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                src="/images/Screenshot 2025-09-26 at 2.50.49 PM.png"
                 alt="Green sprout growing from soil"
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
               />
