@@ -50,8 +50,8 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-600">
-              <li>Email: info@douingit.com</li>
-              <li>Phone: (555) 123-4567</li>
+              <li>Email: douessentials@gmail.com</li>
+              <li>Phone: 401 374-7191</li>
               <li>Available Mon-Fri 9AM-6PM</li>
             </ul>
           </div>
