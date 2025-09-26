@@ -1,7 +1,14 @@
 import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Initialize Resend only when API key is available
+const getResend = () => {
+  const apiKey = process.env.RESEND_API_KEY;
+  if (!apiKey) {
+    throw new Error('RESEND_API_KEY environment variable is not set');
+  }
+  return new Resend(apiKey);
+};
 
 export async function POST(request: NextRequest) {
   try {
@@ -17,6 +24,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Send email using Resend
+    const resend = getResend();
     const { data, error } = await resend.emails.send({
       from: 'DouingIt <onboarding@resend.dev>',
       to: ['info@douingit.com'], // Replace with your actual email
