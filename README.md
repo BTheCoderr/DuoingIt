@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DouingIt Website
+
+A modern Next.js website for DouingIt - preserving family legacies through guided pathways, storytelling, and inter-generational connections.
+
+## Features
+
+- **Modern Design**: Clean, responsive design with Tailwind CSS
+- **Contact Forms**: Integrated with Resend for email collection
+- **Service Sections**: 
+  - Seedling Membership
+  - Virtual Travel
+  - Intercultural Family Coaching
+  - Genealogy Navigation Workshop
+  - Roots and Reflection Storytelling
+  - Memory Preservation
+- **Mobile Responsive**: Optimized for all devices
+- **Email Integration**: Automatic email notifications for form submissions
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. Set up environment variables:
+   Create a `.env.local` file with:
+   ```
+   RESEND_API_KEY=your_resend_api_key
+   NEXT_PUBLIC_SITE_URL=http://localhost:3000
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+This project is configured for deployment on Netlify:
 
-To learn more about Next.js, take a look at the following resources:
+1. Connect your GitHub repository to Netlify
+2. Set the build command to: `npm run build`
+3. Set the publish directory to: `.next`
+4. Add your environment variables in Netlify's dashboard
+5. Deploy!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `RESEND_API_KEY`: Your Resend API key for email functionality
+- `NEXT_PUBLIC_SITE_URL`: The URL of your deployed site
 
-## Deploy on Vercel
+## Contact Form
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The contact form sends emails using Resend and includes:
+- Customer information collection
+- Service interest selection
+- Automatic confirmation emails
+- Admin notification emails
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Tech Stack
+
+- Next.js 15
+- React 18
+- TypeScript
+- Tailwind CSS
+- Resend (Email service)
+- Lucide React (Icons)
