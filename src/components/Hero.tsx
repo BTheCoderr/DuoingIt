@@ -6,7 +6,7 @@ export default function Hero() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="relative bg-gradient-to-br from-green-50 to-yellow-50">
+    <div className="relative bg-white">
       {/* Navigation */}
       <nav className="relative z-10 px-4 py-6 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
@@ -49,6 +49,15 @@ export default function Hero() {
         )}
       </nav>
 
+      {/* Logo Section */}
+      <div className="max-w-7xl mx-auto px-4 py-8 sm:px-6 lg:px-8 text-center">
+        <img
+          src="/images/Douing it logo(1).png"
+          alt="DouingIt Logo"
+          className="h-48 w-auto mx-auto"
+        />
+      </div>
+
       {/* Hero Content */}
       <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -56,7 +65,7 @@ export default function Hero() {
           <div className="order-2 lg:order-1">
             <div className="relative">
               <img
-                src="/images/Screenshot 2025-09-26 at 2.50.49 PM.png"
+                src="/images/Seedling in the sun (1).png"
                 alt="Green sprout growing from soil"
                 className="w-full h-96 object-cover rounded-lg shadow-lg"
               />
@@ -105,7 +114,11 @@ export default function Hero() {
               </div>
             </div>
 
-            <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors shadow-lg">
+            <button 
+              className="text-white font-semibold py-3 px-8 rounded-lg transition-colors shadow-lg"
+              style={{ backgroundColor: '#FF7B31' }}
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSck6ID-pJ456WgZUFJlCI-fa41fKS92nlLgsl0bPGqYBVVhcQ/viewform', '_blank')}
+            >
               Inquire Here
             </button>
           </div>

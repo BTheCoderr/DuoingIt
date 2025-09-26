@@ -55,7 +55,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section id="contact" className="py-16 bg-gradient-to-br from-green-50 to-blue-50">
+    <section id="contact" className="py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -173,7 +173,8 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="bg-green-600 hover:bg-green-700 disabled:bg-gray-400 text-white font-semibold py-4 px-12 rounded-lg transition-colors shadow-lg text-lg"
+                className="disabled:bg-gray-400 text-white font-semibold py-4 px-12 rounded-lg transition-colors shadow-lg text-lg"
+                style={{ backgroundColor: isSubmitting ? '#ccc' : '#FF7B31' }}
               >
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>

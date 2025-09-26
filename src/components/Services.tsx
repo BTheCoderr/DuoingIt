@@ -1,13 +1,44 @@
 'use client';
 
 export default function Services() {
+  const serviceCards = [
+    {
+      id: 'preservation',
+      title: 'PRESERVATION',
+      image: '/images/Memory Preservation.png',
+      buttonText: 'Click Here',
+      bgColor: 'bg-yellow-50'
+    },
+    {
+      id: 'genealogy',
+      title: 'GENEALOGY',
+      image: '/images/Geneology photos.png',
+      buttonText: 'Click Here',
+      bgColor: 'bg-green-50'
+    },
+    {
+      id: 'virtual-travel',
+      title: 'VIRTUAL Travel',
+      image: '/images/Greenery travel n suitcase.jpg',
+      buttonText: 'Click Here',
+      bgColor: 'bg-green-50'
+    },
+    {
+      id: 'coaching',
+      title: 'COACHING',
+      image: '/images/Intercultural Family Coaching Book Today.jpeg',
+      buttonText: 'Click Here',
+      bgColor: 'bg-green-50'
+    }
+  ];
+
   const services = [
     {
       id: 'seedling',
       title: 'Seedling Membership',
       subtitle: 'Where Your Family\'s Story Takes Root',
       description: 'Every family has a story waiting to be told—and remembered. The Seedling Membership helps you uncover, document, and celebrate your family\'s legacy through workshops, coaching, and storytelling tools. We\'re not just preserving names and dates—we\'re preserving values, memories, voices, and traditions.',
-      image: '/images/Seedling in the sun (1).png',
+      image: '/images/Websit-1st-page.jpg',
       buttonText: 'Click here',
       bgColor: 'bg-yellow-50',
       textColor: 'text-yellow-800'
@@ -27,7 +58,7 @@ export default function Services() {
       title: 'Intercultural Family Coaching',
       subtitle: 'Guidance for Families Bridging Cultures & Generations',
       description: 'Every family is unique, and for many, cultural blending creates both beauty and complexity. Our Intercultural Family Coaching helps parents, grandparents, and children navigate traditions, communication, and legacy-building in ways that honor all parts of their heritage. A guided, high-touch coaching experience that helps individuals and families: Clarify their cultural identity, values, and traditions Create emotional continuity across generations Document a tangible family legacy—through story maps, keepsakes, or guided reflections.',
-      image: '/images/Intercultural Family Coaching Book Today.png',
+      image: '/images/Intercultural Family Coaching Book Today.jpeg',
       buttonText: '1st Session FREE',
       bgColor: 'bg-orange-50',
       textColor: 'text-orange-800'
@@ -76,6 +107,52 @@ export default function Services() {
           </p>
         </div>
 
+        {/* Service Cards */}
+        <div className="flex justify-center mb-16">
+          <div className="bg-white rounded-2xl p-8 text-center shadow-lg max-w-4xl">
+            <div className="mb-6">
+              <img
+                src="/images/Website page 2.png"
+                alt="Our Services"
+                className="w-full h-auto rounded-lg mx-auto"
+              />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <button 
+                className="text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg"
+                style={{ backgroundColor: '#FF7B31' }}
+                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSck6ID-pJ456WgZUFJlCI-fa41fKS92nlLgsl0bPGqYBVVhcQ/viewform', '_blank')}
+              >
+                PRESERVATION
+              </button>
+              <button 
+                className="text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg"
+                style={{ backgroundColor: '#FF7B31' }}
+                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSck6ID-pJ456WgZUFJlCI-fa41fKS92nlLgsl0bPGqYBVVhcQ/viewform', '_blank')}
+              >
+                GENEALOGY
+              </button>
+              <button 
+                className="text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg"
+                style={{ backgroundColor: '#FF7B31' }}
+                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSck6ID-pJ456WgZUFJlCI-fa41fKS92nlLgsl0bPGqYBVVhcQ/viewform', '_blank')}
+              >
+                VIRTUAL Travel
+              </button>
+              <button 
+                className="text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg"
+                style={{ backgroundColor: '#FF7B31' }}
+                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSck6ID-pJ456WgZUFJlCI-fa41fKS92nlLgsl0bPGqYBVVhcQ/viewform', '_blank')}
+              >
+                COACHING
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Separator */}
+        <div className="border-t border-gray-300 mb-16"></div>
+
         <div className="space-y-24">
           {services.map((service, index) => (
             <div key={service.id} className={`${service.bgColor} rounded-2xl p-8 md:p-12`}>
@@ -91,7 +168,11 @@ export default function Services() {
                   <p className="text-gray-700 mb-8 leading-relaxed">
                     {service.description}
                   </p>
-                  <button className={`bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors shadow-lg ${service.textColor.replace('text-', 'ring-').replace('-800', '-200')} ring-2`}>
+                  <button 
+                    className="text-white font-semibold py-3 px-8 rounded-lg transition-colors shadow-lg"
+                    style={{ backgroundColor: '#FF7B31' }}
+                    onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSck6ID-pJ456WgZUFJlCI-fa41fKS92nlLgsl0bPGqYBVVhcQ/viewform', '_blank')}
+                  >
                     {service.buttonText}
                   </button>
                 </div>
