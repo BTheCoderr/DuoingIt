@@ -22,7 +22,6 @@ export default function Hero() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             <a href="#services" className="text-gray-700 hover:text-green-600 transition-colors">Services</a>
-            <a href="#about" className="text-gray-700 hover:text-green-600 transition-colors">About</a>
             <a href="#contact" className="text-gray-700 hover:text-green-600 transition-colors">Contact</a>
           </div>
 
@@ -42,7 +41,6 @@ export default function Hero() {
           <div className="md:hidden mt-4 py-4 bg-white rounded-lg shadow-lg">
             <div className="px-4 space-y-2">
               <a href="#services" className="block py-2 text-gray-700 hover:text-green-600">Services</a>
-              <a href="#about" className="block py-2 text-gray-700 hover:text-green-600">About</a>
               <a href="#contact" className="block py-2 text-gray-700 hover:text-green-600">Contact</a>
             </div>
           </div>
