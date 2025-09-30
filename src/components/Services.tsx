@@ -109,7 +109,7 @@ export default function Services() {
 
         {/* Service Cards */}
         <div className="flex justify-center mb-16">
-          <div className="bg-white rounded-2xl p-8 text-center shadow-lg max-w-4xl">
+          <div className="bg-white rounded-2xl p-4 sm:p-8 text-center shadow-lg max-w-4xl w-full">
             <div className="mb-6">
               <img
                 src="/images/Website page 2.png"
@@ -117,30 +117,30 @@ export default function Services() {
                 className="w-full h-auto rounded-lg mx-auto"
               />
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
               <button 
-                className="text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg"
+                className="text-white font-semibold py-3 px-4 sm:px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm sm:text-base"
                 style={{ backgroundColor: '#FF7B31' }}
                 onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSck6ID-pJ456WgZUFJlCI-fa41fKS92nlLgsl0bPGqYBVVhcQ/viewform', '_blank')}
               >
                 PRESERVATION
               </button>
               <button 
-                className="text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg"
+                className="text-white font-semibold py-3 px-4 sm:px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm sm:text-base"
                 style={{ backgroundColor: '#FF7B31' }}
                 onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSck6ID-pJ456WgZUFJlCI-fa41fKS92nlLgsl0bPGqYBVVhcQ/viewform', '_blank')}
               >
                 GENEALOGY
               </button>
               <button 
-                className="text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg"
+                className="text-white font-semibold py-3 px-4 sm:px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm sm:text-base"
                 style={{ backgroundColor: '#FF7B31' }}
                 onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSck6ID-pJ456WgZUFJlCI-fa41fKS92nlLgsl0bPGqYBVVhcQ/viewform', '_blank')}
               >
                 VIRTUAL Travel
               </button>
               <button 
-                className="text-white font-semibold py-3 px-6 rounded-lg transition-colors shadow-lg"
+                className="text-white font-semibold py-3 px-4 sm:px-6 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm sm:text-base"
                 style={{ backgroundColor: '#FF7B31' }}
                 onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSck6ID-pJ456WgZUFJlCI-fa41fKS92nlLgsl0bPGqYBVVhcQ/viewform', '_blank')}
               >
@@ -153,23 +153,23 @@ export default function Services() {
         {/* Separator */}
         <div className="border-t border-gray-300 mb-16"></div>
 
-        <div className="space-y-24">
+        <div className="space-y-16 sm:space-y-24">
           {services.map((service, index) => (
-            <div key={service.id} className={`${service.bgColor} rounded-2xl p-8 md:p-12`}>
-              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
+            <div key={service.id} className={`${service.bgColor} rounded-2xl p-6 sm:p-8 md:p-12`}>
+              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
                 {/* Content */}
-                <div className={index % 2 === 1 ? 'lg:col-start-2' : ''}>
-                  <h3 className={`text-3xl md:text-4xl font-bold ${service.textColor} mb-4`}>
+                <div className={`${index % 2 === 1 ? 'lg:col-start-2' : ''} order-2 lg:order-1`}>
+                  <h3 className={`text-2xl sm:text-3xl md:text-4xl font-bold ${service.textColor} mb-4 leading-tight`}>
                     {service.title}
                   </h3>
-                  <h4 className={`text-xl font-semibold ${service.textColor} mb-6`}>
+                  <h4 className={`text-lg sm:text-xl font-semibold ${service.textColor} mb-4 sm:mb-6`}>
                     {service.subtitle}
                   </h4>
-                  <p className="text-gray-700 mb-8 leading-relaxed">
+                  <p className="text-gray-700 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
                     {service.description}
                   </p>
-                  <button 
-                    className="text-white font-semibold py-3 px-8 rounded-lg transition-colors shadow-lg"
+                  <button
+                    className="w-full sm:w-auto text-white font-semibold py-3 px-6 sm:px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-sm sm:text-base"
                     style={{ backgroundColor: '#FF7B31' }}
                     onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSck6ID-pJ456WgZUFJlCI-fa41fKS92nlLgsl0bPGqYBVVhcQ/viewform', '_blank')}
                   >
@@ -178,12 +178,12 @@ export default function Services() {
                 </div>
 
                 {/* Image */}
-                <div className={index % 2 === 1 ? 'lg:col-start-1' : ''}>
+                <div className={`${index % 2 === 1 ? 'lg:col-start-1' : ''} order-1 lg:order-2`}>
                   <div className="relative">
                     <img
                       src={service.image}
                       alt={service.title}
-                      className="w-full h-80 object-cover rounded-lg shadow-lg"
+                      className="w-full h-64 sm:h-80 object-cover rounded-lg shadow-lg"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg"></div>
                   </div>
