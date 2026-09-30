@@ -1,5 +1,11 @@
 # DouingIt Website
 
+<!-- repo-intro:start -->
+**Project snapshot:** DuoingIt is a family-legacy and storytelling website built around guided services, intergenerational connection, genealogy support, memory preservation, and email-enabled inquiry flows.
+
+**What it demonstrates:** Next.js · TypeScript · Resend · responsive service-site architecture · content storytelling.
+<!-- repo-intro:end -->
+
 A modern Next.js website for DouingIt - preserving family legacies through guided pathways, storytelling, and inter-generational connections.
 
 ## Features
